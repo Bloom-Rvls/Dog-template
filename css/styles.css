@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
+header {
+    z-index: 99;
+}
+
+.dropdown:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu a:hover{
+    background-color: orange;
+    transition: 1.2s;
+}
+
+/* =========================== carousel ================================ */
+main #breedCarousel .carousel-item {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+main #breedCarousel .container {
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+main .carousel-link:hover {
+    display: block;
+}
+
+main .carousel-indicators li {
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+}
+/* =========================== dog life section ================================ */
+main #dogsLifeSection .container {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+/* =========================== dog owner section ================================ */
+.container-img {
+    overflow: hidden;
+}
+.img-zoom:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+/* =========================== collection section ================================ */
+main #collectionSection img {
+    width: 100%;
+}
+
+main .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.6s;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.img-container {
+    overflow: hidden;
+}
+
+.img-container:hover .overlay {
+    opacity: 1;
+}
+
+main .icon-text {
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+main .img-text {
+    font-size: 20px;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
